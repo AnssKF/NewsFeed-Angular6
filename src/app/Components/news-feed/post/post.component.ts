@@ -9,10 +9,14 @@ import { Post } from 'src/app/Interfaces/news-feed';
 export class PostComponent implements OnInit {
 
   @Input() post: Post;
-
+  expanded:boolean = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onExpand(){
+    this.expanded = ! this.expanded;
   }
 
 }

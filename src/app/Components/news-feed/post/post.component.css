@@ -54,3 +54,17 @@
 .card-footer .post-btn:hover {
     background-color: rgba(120, 103, 112, 0.1);
 }
+
+.show-more {
+    height: 3rem;
+    overflow: hidden;
+}
+
+.show-more:hover {
+    cursor: pointer;
+}
+
+.expanded {
+    height: auto;
+    overflow: unset;
+}

@@ -11,6 +11,7 @@ import { PostComponent } from './Components/news-feed/post/post.component';
 import { NewsFeedService } from './Services/news-feed.service';
 import { LeftSidebarComponent } from './Components/left-sidebar/left-sidebar.component';
 import { RightSidebarComponent } from './Components/right-sidebar/right-sidebar.component';
+import { NavbarComponent } from './Components/partials/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RightSidebarComponent } from './Components/right-sidebar/right-sidebar.
     PostComponent,
     LeftSidebarComponent,
     RightSidebarComponent,
-    TimeAgoPipe
+    TimeAgoPipe,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
