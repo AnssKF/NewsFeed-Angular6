@@ -1,0 +1,35 @@
+<div class="card my-3">
+  <div class="card-header py-1">
+    <!-- User name -->
+    <div class="d-flex">
+      <div class="pp">
+        <img src="https://dummyimage.com/100x100/000/fff" alt="user" class="user-img">
+      </div>
+      <div class="post-detailes">
+        <h5><a class="user-name">{{post.user.name}}</a></h5>
+        <div>
+          <span class="post-date">{{ post.date | timeAgo }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body py-1">
+    <!-- Post content -->
+    <p>
+      {{post.body}}
+    </p>
+  </div>
+  <div class="post-attachment" *ngIf="post.type != 'text'">
+    <!-- Image/Video -->
+    <img [src]="post.attachment_url" class="w-100" alt="post image" *ngIf="post.type == 'image'">
+    <video [src]="post.attachment_url" class="w-100" controls *ngIf="post.type == 'video'"></video>
+  </div>
+  <div class="card-footer mx-3 px-0 py-1">
+    <!-- btns -->
+    <div class="d-flex">
+      <button class="post-btn flex-fill p-2">Like</button>
+      <button class="post-btn flex-fill p-2">Comment</button>
+      <button class="post-btn flex-fill p-2">Share</button>
+    </div>
+  </div>
+</div>
