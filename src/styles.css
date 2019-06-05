@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    background-color: #e9ebee;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.38;
+}
+
+
